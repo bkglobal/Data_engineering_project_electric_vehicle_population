@@ -1,0 +1,42 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: Data_Loading_From_Origin_To_DataLake
+  retry_config: null
+  status: failed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: data_loading_from_origin_to_datalake
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2024-04-12 21:50:07.025684+00:00'
+data_integration: null
+description: ETL Process for Electric Vehicle Population Dataset.
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: ev_population_etl_process
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags:
+- ETL
+- EV_Population
+type: python
+uuid: ev_population_etl_process
+variables_dir: /home/src/mage_data/electric_vehicle_population_analysis
+widgets: []
