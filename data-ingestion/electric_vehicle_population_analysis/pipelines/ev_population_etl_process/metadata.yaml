@@ -10,12 +10,12 @@ blocks:
   language: python
   name: Data_Loading_From_Origin_To_DataLake
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: data_loader
   upstream_blocks: []
   uuid: data_loading_from_origin_to_datalake
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration: {}
   downstream_blocks:
@@ -32,7 +32,7 @@ blocks:
   upstream_blocks:
   - data_loading_from_origin_to_datalake
   uuid: gcp_data_loading
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration: {}
   downstream_blocks:
@@ -49,7 +49,7 @@ blocks:
   upstream_blocks:
   - gcp_data_loading
   uuid: data_transformation_and_cleaning
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration:
     data_provider: postgres
@@ -78,7 +78,7 @@ blocks:
   upstream_blocks:
   - data_transformation_and_cleaning
   uuid: staging_data_exporter
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration:
     dbt: {}
@@ -105,15 +105,20 @@ blocks:
   upstream_blocks:
   - staging_data_exporter
   uuid: dbt/models/presentation/T_ElectricVehicle_Type
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration:
+    dbt: {}
+    dbt_profile_target: dev
     dbt_project_name: dbt
+    disable_query_preprocessing: false
+    export_write_policy: append
     file_path: dbt/models/presentation/T_Make_Count.sql
     file_source:
       path: dbt/models/presentation/T_Make_Count.sql
       project_path: dbt
     limit: 1000
+    use_raw_sql: false
   downstream_blocks: []
   executor_config: null
   executor_type: local_python
@@ -127,15 +132,20 @@ blocks:
   upstream_blocks:
   - staging_data_exporter
   uuid: dbt/models/presentation/T_Make_Count
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration:
+    dbt: {}
+    dbt_profile_target: dev
     dbt_project_name: dbt
+    disable_query_preprocessing: false
+    export_write_policy: append
     file_path: dbt/models/presentation/T_Distribution_By_Country_Count.sql
     file_source:
       path: dbt/models/presentation/T_Distribution_By_Country_Count.sql
       project_path: dbt
     limit: 1000
+    use_raw_sql: false
   downstream_blocks: []
   executor_config: null
   executor_type: local_python
@@ -149,7 +159,7 @@ blocks:
   upstream_blocks:
   - staging_data_exporter
   uuid: dbt/models/presentation/T_Distribution_By_Country_Count
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration:
     dbt: {}
@@ -176,6 +186,27 @@ blocks:
   upstream_blocks:
   - staging_data_exporter
   uuid: dbt/models/presentation/T_CAF_Vehicle_Eligibility_Count
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    dbt_project_name: dbt
+    file_path: dbt/models/presentation/T_Vechile_Electric_Utlity.sql
+    file_source:
+      path: dbt/models/presentation/T_Vechile_Electric_Utlity.sql
+      project_path: dbt
+    limit: 1000
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: dbt/models/presentation/T_Vechile_Electric_Utlity
+  retry_config: null
+  status: executed
+  timeout: null
+  type: dbt
+  upstream_blocks: []
+  uuid: dbt/models/presentation/T_Vechile_Electric_Utlity
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}

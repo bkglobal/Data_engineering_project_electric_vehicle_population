@@ -6,7 +6,7 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - ~/metabase-data:./metabase-data
+      - ./metabase-data:/metabase-data
     environment:
       MB_DB_FILE: ./metabase-data/metabase.db
     container_name: metabase

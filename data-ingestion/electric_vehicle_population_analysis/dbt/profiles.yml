@@ -5,12 +5,12 @@ ev_population:
 
     dev:
       type: postgres
-      host: "{{ env_var('POSTGRES_HOST', 'host.docker.internal') }}"
-      user: "{{ env_var('POSTGRES_USER', 'postgres') }}"
-      password: "{{ env_var('POSTGRES_PASSWORD', 'postgres') }}"
+      host: {{ env_var('POSTGRES_HOST') }}
+      user: {{ env_var('POSTGRES_USER') }}
+      password: {{ env_var('POSTGRES_PASSWORD') }}
       port: 5432
-      dbname: "{{ env_var('POSTGRES_DBNAME', 'postgres') }}"
-      schema: "{{ env_var('POSTGRES_SCHEMA', 'analytics') }}"
+      dbname: {{ env_var('POSTGRES_DBNAME') }}
+      schema: {{ env_var('POSTGRES_SCHEMA') }}
       threads: 4
 
   target: dev

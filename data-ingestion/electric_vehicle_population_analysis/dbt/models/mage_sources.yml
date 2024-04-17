@@ -2,7 +2,7 @@ sources:
 - description: Dataframes Mage upstream blocks
   loader: mage
   name: mage_dbt
-  schema: ev_population_schema
+  schema: ev_population
   tables:
   - description: Dataframe for block `staging_data_exporter` of the `ev_population_etl_process`
       mage pipeline.
