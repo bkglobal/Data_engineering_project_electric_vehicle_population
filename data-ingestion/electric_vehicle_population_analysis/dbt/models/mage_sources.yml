@@ -1,0 +1,14 @@
+sources:
+- description: Dataframes Mage upstream blocks
+  loader: mage
+  name: mage_dbt
+  schema: ev_population_schema
+  tables:
+  - description: Dataframe for block `staging_data_exporter` of the `ev_population_etl_process`
+      mage pipeline.
+    identifier: mage_ev_population_etl_process_staging_data_exporter
+    meta:
+      block_uuid: staging_data_exporter
+      pipeline_uuid: ev_population_etl_process
+    name: ev_population_etl_process_staging_data_exporter
+version: 2

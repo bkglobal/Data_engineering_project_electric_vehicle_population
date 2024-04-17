@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: ev_population
+    tables:
+      - name: "stg_ev_population_data"
+        columns:
+          - name: 'vin_1-10'
+          - name: 'county'
+          - name: 'city'
+          - name: 'state'
+          - name: 'postal_code'
+          - name: 'model_year'
+          - name: 'make'
+          - name: 'model'
+          - name: 'electric_vehicle_type'
+          - name: 'clean_alternative_fuel_vehicle_cafv_eligibility'
+          - name: 'electric_range'
+          - name: 'base_msrp'
+          - name: 'legislative_district'
+          - name: 'dol_vehicle_id'
+          - name: 'vehicle_location'
+          - name: 'electric_utility'
+          - name: '2020_census_tract'

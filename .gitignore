@@ -1,1 +1,2 @@
 .env
+data-ingestion/gcp_credentials/key.json

@@ -22,3 +22,4 @@ docker run -it ghcr.io/goccy/bigquery-emulator:latest --project=ev_population_bi
  Could not find kaggle.json. Make sure it's located in /root/.kaggle. Or use the environment method.
 
  
+ docker run --name pgadmin-container -p 5050:80 -e PGADMIN_DEFAULT_EMAIL=user@domain.com -e PGADMIN_DEFAULT_PASSWORD=catsarecool -d dpage/pgadmin4
