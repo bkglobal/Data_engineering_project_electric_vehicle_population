@@ -15,25 +15,70 @@ This analytics reduce the following challanges.
 By addressing these challenges, we can encourage more people to switch to EVs and reduce reliance on fossil fuels, leading to a cleaner environment.
 
 
+# Setting up the Project.
 
-Run Data ingestion Part..
+## Clone the Project.
+```
+git@github.com:bkglobal/Data_engineering_project_electric_vehicle_population.git
+cd Data_engineering_project_electric_vehicle_population
+```
 
-docker compose build
+## Setting up environment variables and credentials.
+Rename `dev.env` to `.env`
+```
+mv dev.env .env
+```
 
-Finally, start the Docker container:
+Add your kaggle credentials to the following variables.
+`KAGGLE_USERNAME=<Kaggle_username>`
+`KAGGLE_API_TOKEN=<Kaggle_token>`
+
+Add GCP Key file to folder `data-ingestion/gcp_credentials/key.json`
+
+
+## Run Project
+
+The project containg two parts which needs to run using Docker.
+
+1. Data Ingestion
+2. Data Analytics
+
+
+### Run Data ingestion
+
+It is using Mage with Postgres Database.
+
+Go to Data Ingestion Folder.
+```
+cd data-ingestion
+```
+
+Start the Docker containers using `docker-compose.yml` file:
+```
 docker compose up
-
-On background..
+```
+For running containers on background
+```
 docker compose up -d
+```
 
 
-docker run -it ghcr.io/goccy/bigquery-emulator:latest --project=ev_population_bigquery
-
-[bigquery-emulator] REST server listening at 0.0.0.0:9050
-[bigquery-emulator] gRPC server listening at 0.0.0.0:9060
 
 
- Could not find kaggle.json. Make sure it's located in /root/.kaggle. Or use the environment method.
+### Run Data Analytics
 
- 
- docker run --name pgadmin-container -p 5050:80 -e PGADMIN_DEFAULT_EMAIL=user@domain.com -e PGADMIN_DEFAULT_PASSWORD=catsarecool -d dpage/pgadmin4
+It is using metabase.
+
+Go to the Data Analytics Folder
+```
+cd data-analytics
+```
+
+Start the Docker containers using `docker-compose.yml` file:
+```
+docker compose up
+```
+For running containers on background
+```
+docker compose up -d
+```

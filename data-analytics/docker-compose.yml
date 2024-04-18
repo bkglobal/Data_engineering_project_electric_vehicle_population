@@ -10,16 +10,3 @@ services:
     environment:
       MB_DB_FILE: ./metabase-data/metabase.db
     container_name: metabase
-
-# version: '3.9'
-# services:
-#   metabase:
-#     image: metabase/metabase:latest
-#     container_name: metabase
-#     hostname: metabase
-#     restart: always
-#     volumes:
-#     - ./metabase-data:./metabase-data
-#     ports:
-#       - 3000:3000
-  
