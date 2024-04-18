@@ -15,6 +15,12 @@ This analytics reduce the following challanges.
 By addressing these challenges, we can encourage more people to switch to EVs and reduce reliance on fossil fuels, leading to a cleaner environment.
 
 
+# Dashboards
+
+![Electric Vehicle Core Analysis](./dashboards/Dashboard1.png)
+![Electric Vehicle Comparision](./dashboards/Dashboard2.png)
+
+
 # Setting up the Project.
 
 ## Clone the Project.
