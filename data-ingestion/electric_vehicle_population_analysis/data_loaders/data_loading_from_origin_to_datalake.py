@@ -50,7 +50,7 @@ def load_data_from_api(*args, **kwargs):
     # Set up Google Cloud Storage credentials using environment variable (for authentication)
 
     # Specify your GCS bucket name, destination blob name, and file name
-    bucket_name = "dev-adscore-dataingestion"
+    bucket_name = "ev_population"
     destination_blob_name = dataset_file_name
     file_name = dataset_file_name
 

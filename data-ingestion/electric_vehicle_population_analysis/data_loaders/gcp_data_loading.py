@@ -23,7 +23,7 @@ def load_from_google_cloud_storage(*args, **kwargs):
     config_profile = 'default'
     dataset_file_name = 'Electric_Vehicle_Population_Data.csv'
     
-    bucket_name = 'dev-adscore-dataingestion'
+    bucket_name = 'ev_population'
     object_key = dataset_file_name
 
 
