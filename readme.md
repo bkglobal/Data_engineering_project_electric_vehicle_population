@@ -1,7 +1,7 @@
 # Electric Vehicle Analysis 
+This project uses advanced data engineering approaches to streamline data processing and enhance predictive analytics capabilities. By leveraging cutting-edge algorithms and scalable infrastructure, it aims to increase the flexibility on finding perfect electrical vehicle.
 
-## What is the problem describing here ?
-
+## Problem Statement
 The main problem is the lack of the public awareness to educate people about the benefits of EVs (Electric Vehicles), charging infrastructure and effeciency on price, emission control and lots more advantages.
 
 ## Here we solved the problem !!
