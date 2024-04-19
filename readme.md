@@ -1,6 +1,9 @@
 # Electric Vehicle Analysis 
 This project uses advanced data engineering approaches to streamline data processing and enhance predictive analytics capabilities. By leveraging cutting-edge algorithms and scalable infrastructure, it aims to increase the flexibility on finding perfect electrical vehicle.
 
+## Infrastructure Diagram
+![Infrastructure Idagram](assets/infrastructure/Electrical_vehicle_population_etl_infrastructure.png)
+
 ## Problem Statement
 The main problem is the lack of the public awareness to educate people about the benefits of EVs (Electric Vehicles), charging infrastructure and effeciency on price, emission control and lots more advantages.
 
@@ -17,8 +20,8 @@ By addressing these challenges, we can encourage more people to switch to EVs an
 
 # Dashboards
 
-![Electric Vehicle Core Analysis](./dashboards/Dashboard1.png)
-![Electric Vehicle Comparision](./dashboards/Dashboard2.png)
+![Electric Vehicle Core Analysis](./assets/dashboards/Dashboard1.png)
+![Electric Vehicle Comparision](./assets/dashboards/Dashboard2.png)
 
 
 # Setting up the Project.
